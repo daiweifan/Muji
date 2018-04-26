@@ -1,0 +1,314 @@
+/*No tocar este codigo*/ 
+.sidebar-closed > #sidebar > ul {
+    display: none;
+}
+
+.sidebar-closed #main-content {
+    margin-left: 0px;
+}
+
+.sidebar-closed #sidebar {
+    margin-left: -210px;
+}
+
+/* Colores
+Azulado #41495c
+gris claro #f0f0f0
+lila active #9a4c9c
+rosa hover #e06ea9
+gris icons #969696
+cian icons #69e0f0
+------- */
+
+#container {
+	width: 100%;
+}
+
+body {
+	background-color: #f0f0f0;
+	color: grey;
+}
+
+/*	Header  */
+
+.header {
+	padding: 10px 20px;
+	width: 100%;
+	position: fixed; 
+	z-index: 1;
+}
+
+.sidebar-toggle-box {
+	display: inline;
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+.logo {
+	font-size: 20px;
+}
+
+a.logo:hover {
+	color: #e06ea9;
+	text-decoration: none;
+}
+
+.nav > li > a.logout {
+	background-color: #9a4c9c;
+	color: white;
+	height: 30px;
+	border-radius: 10px;
+	margin-top: -32px;
+	padding: 5px 20px;
+	margin-right: 5px;
+}
+
+.nav > li > a.logout:hover {
+	background-color: #e06ea9;
+	color: white;
+}
+
+#sidebar, .black-bg, .logo {
+	background-color: #41495c;
+	color: white;
+}
+
+
+
+/*	Nav FIXED  */
+
+.profile {
+	margin-left: -40px;
+}
+
+#sidebar {
+	position: fixed; 
+	left: 0;
+	top: 50px;
+	width: 210px;
+	height: 100%;
+	padding: 20px 0px;
+	margin-left: 0px;
+	z-index: 1;
+}
+
+.sidebar-menu > li {
+	margin-left: -30px;
+	margin-right: 10px;
+	list-style: none;
+	list-style-position: inside;
+}
+
+.sub-menu > a {
+	color: #969696;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-decoration: none;
+	display: block;
+}
+
+.sub-menu i {
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+li.sub-menu > a {
+	color: #969696;
+}
+
+
+/* EFECTOS  MENU */
+
+.sub-menu > a.active {
+	background-color: #9a4c9c;
+	color: white;
+}
+
+.sidebar-menu > li:hover {
+	background-color: #e06ea9;
+}
+
+.sidebar-menu > li a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+
+
+/* Main Content */
+
+#main-content {
+	margin-left: 210px;
+	padding: 50px 20px;
+}
+
+.pt-25 {
+	padding-top: 25px;	
+}
+
+.wrapper {
+	width: 100%;
+	background-color: #f0f0f0;
+	padding-top: 10px;	
+}
+
+
+
+/* Icons y hover */
+
+.box1 {
+	color: #969696;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	border-bottom: 1px solid #969696;
+	padding: 10px 0px;
+	display: block;
+}
+
+.box1 > span {
+	font-size: 50px;
+	text-align: center;
+}
+
+.box1:hover {
+	border-bottom: none;
+}
+
+.box0 p {
+	display: none;
+}
+
+.box0:hover  {
+	background-color: white;
+	width: 150px;
+	height: 180px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+	box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+}
+
+.box0:hover p {
+	color: #FF7E00;
+	font-size: 12px;
+	text-align: center;
+	display: block;
+}
+
+
+
+/* Videos */
+
+.page-header h1, h4 {
+	color: grey;
+}
+
+.buttons > a {
+	margin-right: 10px;
+}
+
+hr.divider {
+	background-color: #969696;
+	border: 1px solid #969696;
+	opacity: 0.2;
+	margin: 20px 0px;
+}
+
+.showback, .form-panel, .content-panel {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+	box-shadow: 0px 6px 6px -4px rgba(0,0,0,0.6);
+}
+
+
+/* Candy section */
+
+.candy {
+	padding: 10px 10px;
+	background-color: white;
+}
+
+.lila {
+	background-color: #9a4c9c;
+	color: white;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding: 18px;
+	font-size: 14px;
+}
+
+.desc {
+	background-color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.thumb {
+	float: left;
+	margin-right: 10px;
+}
+
+.bg-theme {
+	color: white;
+	background-color: #69e0f0;
+	margin-bottom: 40px;
+}
+
+
+
+/* ******* */
+/* BUTTONS */
+
+
+
+/* ******* */
+/* GALLERY */
+
+.photo {
+	margin-bottom: 20px;
+}
+
+
+/* ******* */
+/* LOG IN */
+
+#login-page {
+	background-color: #f0f0f0;
+	padding: 70px 0px;
+}
+
+.form-login {
+	background-color: white;
+	width: 350px;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+	text-align: center;
+}
+
+.form-login-heading {
+	background-color: #69e0f0;
+	color: white;
+	width: 350px;
+	height: 100px;
+	text-align: center;
+	padding: 25px 40px; 
+	margin-bottom: 20px;
+	margin-left: -20px;
+	margin-right: -20px;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+

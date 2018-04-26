@@ -1,0 +1,36 @@
+/*Inserta tu Codigo Responsive*/
+
+@media (max-width: 768px) { 
+
+	.sidebar-toggle-box {
+	display: inline;
+	}
+
+	.logo {
+	display: inline-block;
+	}
+
+	.logout {
+	display: inline;
+	}
+
+	.box0, .box1 {
+	margin: 0 auto;
+	}
+
+	.candy {
+	margin-left: 15px;
+	width: 92%;
+	}
+
+	/* BUTTONS */
+
+	button.btn {
+		margin-bottom: 10px;
+	}
+
+
+	/* TABLES - ADVANCED */
+
+
+}

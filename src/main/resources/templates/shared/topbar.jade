@@ -1,0 +1,40 @@
+ <header class="header black-bg">
+    <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+    </div>      
+    <a href="#" class="logo">
+      <b class="hidden-xs">慕极工作室官网后台</b>
+      <b class="title-xs visible-xs">测试</b>
+    </a>
+    <div class="top-menu">
+      <ul class="nav pull-right top-menu">
+        <li>
+          <a class="logout" id="logout">退出</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+    <script type="text/javascript">  
+	 	$(function(){
+
+			var loginUrl = "/backend/login";
+			
+			var logoutUrl = "/backend/logout";
+			
+			$("#logout").click(function(){
+				 if(confirm("你确定退出登录么？")){
+				 	$.ajax({
+						url:logoutUrl,
+						method:"post",
+						data:{},
+						success:function(data){
+							if(data.success){
+								window.location.href=loginUrl;
+							}
+						}
+					})			 
+				 }			
+			})
+		})
+	</script>  

@@ -1,0 +1,28 @@
+//-后台 左侧栏部分
+.sidebar-left
+	ul.nav.nav-sidebar
+		li
+			a(href="#{_base}/backend/order/index")
+				span.glyphicon.glyphicon-tasks
+				lable 订单管理
+		li
+			a(href="#{_base}/backend/glass/index")
+				span.glyphicon.glyphicon-list-alt
+				lable 眼镜管理
+		if currentAdmin.role == "1"
+			li(style="margin-bottom:100px")
+				a(href="#{_base}/backend/admin/index")
+					span.glyphicon.glyphicon-user
+					lable 客服管理
+
+		li.hidden#add_glass_li
+			a.btn.btn-warning(href="#{_base}/backend/glass/new")
+				span.glyphicon.glyphicon-plus
+				lable 添加眼镜
+
+		if currentAdmin.role == "1"
+			li.hidden#add_admin_li
+				a.btn.btn-warning(href="#{_base}/backend/admin/new")
+					span.glyphicon.glyphicon-plus
+					lable 添加客服
+

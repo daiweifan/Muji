@@ -1,0 +1,14 @@
+.navbar(role='navigation')
+	.navbar-header
+		a.navbar-brand(href="#{_base}/backend/order/index",style='font-size:28px;') 眼镜店后台管理系统
+	.pull-right
+		ul.nav.navbar-nav
+			li
+				a(href="#{_base}/backend/login") 退出
+			li
+				a(href="#{_base}/backend/admin/editPassword") 修改密码
+			li
+				a(href="#{_base}/backend/admin/edit/#{currentAdmin.id}")
+					img(src="#{currentAdmin.avatarUrl}",style="width:80px;height:80px;border-radius:50%;")
+
+

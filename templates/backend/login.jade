@@ -1,0 +1,77 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    | 	
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    | 	
+    meta(name="description", content="")
+    | 	
+    meta(name="author", content="Dashboard")
+    | 	
+    meta(name="keyword", content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina")
+    | 	
+    title 慕极后台登录界面 
+    |   
+    link(rel="stylesheet",href='#{_base}/css/bootstrap.css')
+    |     
+    link(rel="stylesheet", href="#{_base}/css/font-awesome.css")
+    |     
+    link(rel="stylesheet", href="#{_base}/css/lineicons.css")
+    |     
+    link(rel="stylesheet", href="#{_base}/css/adventure-time-theme-responsive.css")
+    |     
+    link(rel="stylesheet", href="#{_base}/css/adventure-time-theme.css")
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+      |       
+      script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+  |   
+  body
+    #login-page
+      .container
+        form.form-login()
+          h2.form-login-heading 慕极后台登录界面 #{_base}     
+          |   				
+          .login-wrap
+            input.form-control#username(type="text", placeholder="用户名", autofocus="",name='username')
+            |   					
+            br
+            |   					
+            input.form-control#password(type="password", placeholder="密码",name='password')
+            |   					
+            label.checkbox
+              span.pull-right
+                a(data-toggle="modal", href="login.html#myModal") 忘记密码？
+            |   					
+            button.btn.btn-theme.btn-block(type="button")
+              i.fa.fa-lock
+              |  登录
+            |   					
+            hr
+            
+          // Modal
+          #myModal.modal.fade(aria-hidden="true", aria-labelledby="myModalLabel", role="dialog", tabindex="-1")
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+                  |   								
+                  h4.modal-title 多Te olvidaste el password?
+                |   							
+                .modal-body
+                  p Ingresa tu email para recuperar tu contrase単a.
+                  |   								
+                  input.form-control.placeholder-no-fix(type="text", name="email", placeholder="Email", autocomplete="off")
+                |   							
+                .modal-footer
+                  button.btn.btn-default(data-dismiss="modal", type="button") Cancelar
+                  |   								
+                  button.btn.btn-theme(type="button") Enviar
+          // modal
+    script(src='#{_base}/lib/jquery/dist/jquery.min.js')
+    |   	
+    script(src="#{_base}/js/bootstrap.min.js")
+    |
+    script(src="#{_base}/backend/login.js")
